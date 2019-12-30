@@ -10,18 +10,29 @@ import Vuex from 'vuex'
 //import NProgress from 'nprogress'
 //import 'nprogress/nprogress.css'
 import routes from './routes'
-import Mock from './mock'
-Mock.bootstrap();
+// import Mock from './mock'
+// Mock.bootstrap();
 import 'font-awesome/css/font-awesome.min.css'
+
+import axios from 'axios'
+axios.defaults.baseURL = "http://localhost:9527/services";
+Vue.prototype.$http = axios
 
 Vue.use(ElementUI)
 Vue.use(VueRouter)
 Vue.use(Vuex)
 
+import BaiduMap from 'vue-baidu-map'
+
+Vue.use(BaiduMap, {
+    // ak 是在百度地图开发者平台申请的密钥 详见 http://lbsyun.baidu.com/apiconsole/key */
+    ak: 'UPbP9D0Xxxuttvnf99E8SNiSNOQVHW0M'
+})
+
 //NProgress.configure({ showSpinner: false });
 
 const router = new VueRouter({
-  routes
+  routes:routes
 })
 
 router.beforeEach((to, from, next) => {
