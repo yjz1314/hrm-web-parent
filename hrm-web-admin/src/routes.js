@@ -9,6 +9,7 @@ import Page5 from './views/nav2/Page5.vue'
 import echarts from './views/charts/echarts.vue'
 import CourseType from './views/course/CourseType.vue'
 import TenantRegister from './views/TenantRegister.vue'
+import Course from './views/course/Course.vue'
 
 let routes = [
     {
@@ -33,7 +34,7 @@ let routes = [
         path: '/',
         component: Home,
         name: '',
-        iconCls: 'fa fa-eercast',
+        iconCls: 'fa fa-university',
         leaf: true,//只有一个节点
         children: [
             { path: '/main', component: echarts, name: '首页' }
@@ -44,21 +45,22 @@ let routes = [
         path: '/',
         component: Home,
         name: '系统管理',
-        iconCls: 'fa fa-superpowers',//图标样式class
+        iconCls: 'fa fa-wrench',//图标样式class
         children: [
             { path: '/systemdictionary', component: Table, name: '数据字典' },
             { path: '/role', component: Form, name: '角色管理' },
             { path: '/permission', component: user, name: '权限管理' },
+            { path: '/tenant/register', component: TenantRegister, name: '住户管理' },
         ]
     },
     {
         path: '/',
         component: Home,
         name: '课程管理',
-        iconCls: 'fa fa-id-card-o',
+        iconCls: 'fa fa-book',
         children: [
             { path: '/coursetype', component: CourseType, name: '课程类型' },
-            { path: '/course', component: Page5, name: '课程管理' }
+            { path: '/course', component: Course, name: '课程管理' }
         ]
     },
 

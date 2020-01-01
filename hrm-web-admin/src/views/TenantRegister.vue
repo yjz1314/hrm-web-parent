@@ -48,11 +48,24 @@
       </el-col>
     </el-row>
     <el-row>
-      <el-col :span="11">
-        <el-form-item label="公司logo">
-          <el-input type="text" v-model="tenant.logo" auto-complete="off" placeholder=""></el-input>
-        </el-form-item>
-      </el-col>
+        <el-col :span="11">
+            <el-form-item prop="setMealId" label="套餐选择">
+                <!--<el-input type="text" v-model="tenant.setmeal_id" auto-complete="off"></el-input>-->
+                <el-select style="width:100%" v-model="tenant.setmeal_id" clearable placeholder="请选择套餐">
+                    <el-option
+                            v-for="item in setmeals"
+                            :key="item.id"
+                            :label="item.mealName"
+                            :value="item.id">
+                        <span style="float: left">{{ item.mealName }}</span>
+                        <span style="float: right; color: #8492a6; font-size: 13px">￥{{ item.mealPrice }}</span>
+                    </el-option>
+                </el-select>
+
+            </el-form-item>
+
+        </el-col>
+
       <el-col :span="11" :offset="1">
         <el-form-item prop="repassword" label="重复密码">
           <el-input type="password" v-model="tenant.repassword" auto-complete="off" placeholder="请再次输入密码"></el-input>
@@ -60,23 +73,21 @@
       </el-col>
     </el-row>
     <el-row>
-      <el-col :span="11">
-        <el-form-item prop="setMealId" label="套餐选择">
-          <!--<el-input type="text" v-model="tenant.setmeal_id" auto-complete="off"></el-input>-->
-          <el-select style="width:100%" v-model="tenant.setmeal_id" clearable placeholder="请选择套餐">
-            <el-option
-                    v-for="item in setmeals"
-                    :key="item.id"
-                    :label="item.mealName"
-                    :value="item.id">
-              <span style="float: left">{{ item.mealName }}</span>
-              <span style="float: right; color: #8492a6; font-size: 13px">￥{{ item.mealPrice }}</span>
-            </el-option>
-          </el-select>
+        <el-col :span="11">
+            <el-form-item label="公司logo">
+                <el-upload
+                        class="upload-demo"
+                        action="http://localhost:9527/services/file/fastdfs/upload"
+                        :on-remove="handleRemove"
+                        :on-success="handleUploadSuccess"
+                        :file-list="fileList"
+                        list-type="picture">
+                    <el-button size="small" type="primary">点击上传</el-button>
+                    <div slot="tip" class="el-upload__tip">只能上传jpg/png文件,且不超过500kb</div>
+                </el-upload>
 
-        </el-form-item>
-
-      </el-col>
+            </el-form-item>
+        </el-col>
     </el-row>
     <el-row>
       <el-col :span="23" style="text-align: right">
@@ -187,6 +198,45 @@
         showBaiduDialog(){
             this.dialogVisible = true;
         },
+        //文件上传成功后的回调
+        handleUploadSuccess(response, file, fileList){
+        //接收到fileId
+        // console.log("response",response)
+        // console.log("file",file)
+        // console.log("fileList",fileList)
+            let {success,message,resultObj} = response;
+            if (success){
+                this.tenant.logo = resultObj;
+            }else{
+                this.$message({
+                    message:message ,
+                    type: 'error'
+                });
+            }
+        },
+        //文件列表删除(前端删除)的回调
+        handleRemove(file, fileList) {
+            let fileId = file.response.resultObj;
+        //调用接口 - 异步
+            this.$http.get("/file/fastdfs/delete?file_id="+fileId)
+                .then(rest=>{
+                    let {success,message} = rest.data;
+                    if (success){
+                        this.$message({
+                            message:message ,
+                            type: 'success'
+                        });
+                    }else{
+                        this.$message({
+                            message:message ,
+                            type: 'error'
+                        });
+                    //考虑到使用同步
+                        return false;
+                    }
+                })
+        },
+
         //加载所有套餐
         getSetmeals(){
           this.$http.get("/system/meal/list")
