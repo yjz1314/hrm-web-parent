@@ -4,8 +4,8 @@ import Home from './views/Home.vue'
 import Table from './views/nav1/Table.vue'
 import Form from './views/nav1/Form.vue'
 import user from './views/nav1/user.vue'
-import Page4 from './views/nav2/Page4.vue'
-import Page5 from './views/nav2/Page5.vue'
+import Page from './views/page/Page.vue'
+import Site from './views/page/Site.vue'
 import echarts from './views/charts/echarts.vue'
 import CourseType from './views/course/CourseType.vue'
 import TenantRegister from './views/TenantRegister.vue'
@@ -61,6 +61,16 @@ let routes = [
         children: [
             { path: '/coursetype', component: CourseType, name: '课程类型' },
             { path: '/course', component: Course, name: '课程管理' }
+        ]
+    },
+    {
+        path: '/',
+        component: Home,
+        name: '页面管理',
+        iconCls: 'fa fa-book',
+        children: [
+            { path: '/site', component: Site, name: '站点管理' },
+            { path: '/page', component: Page, name: '页面管理' }
         ]
     },
 
