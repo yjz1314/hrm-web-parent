@@ -102,9 +102,9 @@
 				<el-form-item label="课程类型" prop="courseTypeId">
 					<!--<el-input v-model="course.courseTypeId" auto-complete="off"></el-input>-->
 					<el-cascader v-model="course.courseTypeId"
-							:options="typeTree"
-							:props="{ checkStrictly: true,value:'id',label:'name'}"
-							clearable></el-cascader>
+								 :options="typeTree"
+								 :props="{ checkStrictly: true,value:'id',label:'name'}"
+								 clearable></el-cascader>
 				</el-form-item>
 				<el-form-item label="简介" prop="intro">
 					<el-input v-model="course.detail.intro" auto-complete="off"></el-input>
@@ -122,33 +122,33 @@
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
+    export default {
+        data() {
+            return {
                 formVisible:false,//对话框默认不显示,只有点击添加或修改的时候显示
                 listLoading:false,
-				//查询对象
-				filters:{
-					keyword:''
-				},
-				page:1,//当前页,要传递到后台的
-				total:0, //分页总数
-				pageSize:10,
-			    courses:[], //当前页数据
-				courseLevels:[],
-				//初始值
+                //查询对象
+                filters:{
+                    keyword:''
+                },
+                page:1,//当前页,要传递到后台的
+                total:0, //分页总数
+                pageSize:10,
+                courses:[], //当前页数据
+                courseLevels:[],
+                //初始值
                 course:{
                     id:null,
-					name:'',
-					users:'',
-					courseTypeId:null,
-					grade:null,
-					detail:{
+                    name:'',
+                    users:'',
+                    courseTypeId:null,
+                    grade:null,
+                    detail:{
                         intro:'',
                         description:''
-					}
-				},
-				employees:[],
+                    }
+                },
+                employees:[],
                 typeTree:[],
                 formRules: {
                     name: [
@@ -156,9 +156,9 @@
                     ]
                 },
                 sels:[]
-			}
-		},
-		methods: {
+            }
+        },
+        methods: {
             // 递归判断列表，把最后的children设为undefined
             getTreeData(data){
                 for(var i=0;i<data.length;i++){
@@ -177,7 +177,7 @@
                     .then(result=>{
                         this.typeTree = this.getTreeData(result.data);
                     });
-			},
+            },
             online(){
                 let param = this.sels.map(e => e.id);//es6语法
                 this.$http.post("/course/course/online",param) //$.Post(.....)
@@ -198,42 +198,24 @@
                         }
 
                     });
-			},
+            },
             offline(){
-                let param = this.sels.map(e => e.id);//es6语法
-                this.$http.post("/course/course/offline",param) //$.Post(.....)
-                    .then(result=>{
-                        let {success,message} = result.data;
-                        if (success){
-                            this.$message({
-                                message: '操作成功!',
-                                type: 'success'
-                            });
-                            //刷新数据
-                            this.getCourses();
-                        }else{
-                            this.$message({
-                                message: '操作失败!',
-                                type: 'error'
-                            });
-                        }
 
-                    });
             },
             selsChange(sels){
                 this.sels = sels;
-			},
-		    getCourseLevels(){
+            },
+            getCourseLevels(){
                 //发送请求到后台获取数据
                 this.$http.get("/system/systemdictionaryitem/listSn?sn=courseLevel")
                     .then(result=>{
                         this.courseLevels = result.data;
                     });
 
-			},
-			add(){
-				//清空数据
-				this.course={
+            },
+            add(){
+                //清空数据
+                this.course={
                     id:null,
                     name:'',
                     users:'',
@@ -243,25 +225,25 @@
                         intro:'',
                         description:''
                     }
-				}
-				//打开dialog
-				this.formVisible =true;
-				this.getCourseLevels();
-				this.getTypeTree();
-			},
+                }
+                //打开dialog
+                this.formVisible =true;
+                this.getCourseLevels();
+                this.getTypeTree();
+            },
             stateFormatter(row, column, cellValue, index){
 
                 if(cellValue===0){
                     return "正常";
-				}else{
+                }else{
                     return "停用";
-				}
-			},
+                }
+            },
             handleCurrentChange(curentPage){
                 this.page = curentPage;
                 this.getCourses();
-			},
-		    save(){
+            },
+            save(){
                 this.$refs.course.validate((valid) => {
                     //校验表单成功后才做一下操作
                     if (valid) {
@@ -270,50 +252,50 @@
                             let para = Object.assign({}, this.course);
                             para.courseTypeId = para.courseTypeId[para.courseTypeId.length-1] //这是一个垃圾
                             //判断是否有id有就是修改,否则就是添加
-							this.$http.post("/course/course/save",para).then((res) => {
-								this.$message({
-									message: '操作成功!',
-									type: 'success'
-								});
-								//重置表单
-								this.$refs['course'].resetFields();
-								//关闭对话框
-								this.formVisible = false;
-								//刷新数据
-								this.getCourses();
-							});
+                            this.$http.post("/course/course/save",para).then((res) => {
+                                this.$message({
+                                    message: '操作成功!',
+                                    type: 'success'
+                                });
+                                //重置表单
+                                this.$refs['course'].resetFields();
+                                //关闭对话框
+                                this.formVisible = false;
+                                //刷新数据
+                                this.getCourses();
+                            });
                         });
                     }
                 })
-			},
+            },
             edit(row){
                 //回显
                 let courseTmp = Object.assign({}, row); //解决对话框改值后列表会被改值.
                 this.course = courseTmp; //里面本来就有id,相当于回显了id
-				//显示
+                //显示
                 this.formVisible =true;
                 this.getCourseLevels();
                 this.getTypeTree();
-			}
-		    ,
+            }
+            ,
             getCourses(){
                 //发送Ajax请求后台获取数据  axios
-				//添加分页条件及高级查询条件
-				let para = {
-				    "page":this.page,
-					"rows":this.pageSize,
-					"keyword":this.filters.keyword
-				};
-				this.listLoading = true; //显示加载圈
-				//分页查询
+                //添加分页条件及高级查询条件
+                let para = {
+                    "page":this.page,
+                    "rows":this.pageSize,
+                    "keyword":this.filters.keyword
+                };
+                this.listLoading = true; //显示加载圈
+                //分页查询
                 this.$http.post("/course/course/page",para) //$.Post(.....)
                     .then(result=>{
                         this.total = result.data.total;
                         this.courses = result.data.rows;
                         this.listLoading = false;  //关闭加载圈
                     });
-			},
-			del(row){
+            },
+            del(row){
                 console.log(row);
                 this.$confirm('确认删除该记录吗?', '提示', {
                     type: 'warning'
@@ -329,23 +311,23 @@
                                     message: '删除成功',
                                     type: 'success'
                                 });
-							}else{
+                            }else{
                                 this.$message({
                                     message: result.data.message,
                                     type: 'error'
                                 });
-							}
-							//刷新数据
+                            }
+                            //刷新数据
                             this.getCourses();
                         })
-				});
+                });
 
-			}
-		},
-		mounted() {
-		    this.getCourses()
-		}
-	}
+            }
+        },
+        mounted() {
+            this.getCourses()
+        }
+    }
 
 </script>
 

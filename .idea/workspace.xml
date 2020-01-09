@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a474517-5acb-429b-af60-3aa44cae6723" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/hrm-web-admin/src/views/page/Page.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hrm-web-admin/src/views/page/Site.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hrm-web-course/js/vue/vue.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hrm-web-course/js/vue/vue.min.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/hrm-web-admin/src/routes.js" afterPath="$PROJECT_DIR$/hrm-web-admin/src/routes.js" />
+      <change beforePath="$PROJECT_DIR$/hrm-web-admin/package.json" afterPath="$PROJECT_DIR$/hrm-web-admin/package.json" />
+      <change beforePath="$PROJECT_DIR$/hrm-web-admin/src/main.js" afterPath="$PROJECT_DIR$/hrm-web-admin/src/main.js" />
       <change beforePath="$PROJECT_DIR$/hrm-web-admin/src/views/course/Course.vue" afterPath="$PROJECT_DIR$/hrm-web-admin/src/views/course/Course.vue" />
+      <change beforePath="$PROJECT_DIR$/hrm-web-admin/src/views/page/Page.vue" afterPath="$PROJECT_DIR$/hrm-web-admin/src/views/page/Page.vue" />
+      <change beforePath="$PROJECT_DIR$/hrm-web-admin/src/views/page/Site.vue" afterPath="$PROJECT_DIR$/hrm-web-admin/src/views/page/Site.vue" />
+      <change beforePath="$PROJECT_DIR$/hrm-web-course/home.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hrm-web-course/list.html" afterPath="$PROJECT_DIR$/hrm-web-course/list.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +31,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hrm-web-admin/.gitignore">
+      <file leaf-file-name="CourseType.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/views/course/CourseType.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1794">
+              <caret line="69" column="25" lean-forward="false" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -39,8 +54,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hrm-web-admin/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="364">
+              <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -56,33 +71,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TenantRegister.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/views/TenantRegister.vue">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6630">
-              <caret line="255" column="10" lean-forward="false" selection-start-line="255" selection-start-column="10" selection-end-line="255" selection-end-column="10" />
+            <state relative-caret-position="104">
+              <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
               <folding>
-                <marker date="1577716767744" expanded="true" signature="12754:12757" ph="{...}" />
+                <element signature="e#218#252#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/routes.js">
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="35" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Page.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package-lock.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hrm-web-admin/package-lock.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/views/page/Page.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="190" column="8" lean-forward="false" selection-start-line="190" selection-start-column="8" selection-end-line="190" selection-end-column="8" />
+            <state relative-caret-position="5538">
+              <caret line="213" column="8" lean-forward="false" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#el-table#0;n#section#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#el-pagination#0;n#el-col#1;n#section#0;n#template#0;n#!!top" expanded="true" />
@@ -91,35 +116,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Site.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/views/page/Site.vue">
+      <file leaf-file-name="vue.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hrm-web-course/js/vue/vue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9178">
-              <caret line="353" column="8" lean-forward="false" selection-start-line="353" selection-start-column="8" selection-end-line="353" selection-end-column="8" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Course.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/views/course/Course.vue">
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hrm-web-course/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9126">
-              <caret line="351" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="353" selection-end-column="8" />
+            <state relative-caret-position="653">
+              <caret line="2726" column="7" lean-forward="false" selection-start-line="2726" selection-start-column="7" selection-end-line="2726" selection-end-column="7" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-                <marker date="1577503618001" expanded="true" signature="943:951" ph="{&quot;routes&quot;: routes...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -144,12 +156,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hrm-web-admin/src/main.js" />
         <option value="$PROJECT_DIR$/hrm-web-admin/src/views/TenantRegister.vue" />
-        <option value="$PROJECT_DIR$/hrm-web-admin/src/views/course/Course.vue" />
         <option value="$PROJECT_DIR$/hrm-web-admin/src/routes.js" />
+        <option value="$PROJECT_DIR$/hrm-web-admin/index.html" />
+        <option value="$PROJECT_DIR$/hrm-web-admin/package.json" />
+        <option value="$PROJECT_DIR$/hrm-web-admin/src/main.js" />
         <option value="$PROJECT_DIR$/hrm-web-admin/src/views/page/Site.vue" />
+        <option value="$PROJECT_DIR$/hrm-web-admin/src/views/course/Course.vue" />
+        <option value="$PROJECT_DIR$/hrm-web-admin/src/views/course/CourseType.vue" />
         <option value="$PROJECT_DIR$/hrm-web-admin/src/views/page/Page.vue" />
+        <option value="$PROJECT_DIR$/hrm-web-course/list.html" />
       </list>
     </option>
   </component>
@@ -179,8 +195,7 @@
     <handled-path value="$PROJECT_DIR$/hrm-web-admin/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="74" />
-    <option name="y" value="7" />
+    <option name="x" value="557" />
     <option name="width" value="1346" />
     <option name="height" value="689" />
   </component>
@@ -279,6 +294,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -289,28 +306,7 @@
             <path>
               <item name="hrm-web-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="hrm-web-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm-web-admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm-web-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm-web-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm-web-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm-web-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm-web-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm-web-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrm-web-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrm-web-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm-web-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="hrm-web-course" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,23 +314,22 @@
       </pane>
       <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/新建文本文档 (2).txt" />
+    <property name="last_opened_file_path" value="G:/课件/2020-01-05-HRM(人力资源管理)-day09/code/hrm-parent1515" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\hrm-aue\hrm-web-parent\hrm-web-course\js" />
       <recent name="D:\hrm-aue\hrm-web-parent\hrm-web-admin\src\views" />
       <recent name="D:\java_IDEA\hrm-web-parent\hrm-web-admin" />
     </key>
@@ -472,11 +467,28 @@
       <workItem from="1577952834592" duration="1712000" />
       <workItem from="1577963815928" duration="970000" />
       <workItem from="1577967346183" duration="2044000" />
+      <workItem from="1578017991828" duration="730000" />
+      <workItem from="1578031772880" duration="1093000" />
+      <workItem from="1578032920823" duration="305000" />
+      <workItem from="1578033274366" duration="161000" />
+      <workItem from="1578033485150" duration="666000" />
+      <workItem from="1578037950462" duration="598000" />
+      <workItem from="1578048582959" duration="1991000" />
+      <workItem from="1578143903136" duration="1177000" />
+      <workItem from="1578186286289" duration="2584000" />
+      <workItem from="1578237664438" duration="113000" />
+      <workItem from="1578382161146" duration="628000" />
+      <workItem from="1578383217795" duration="69000" />
+      <workItem from="1578390092987" duration="871000" />
+      <workItem from="1578399074352" duration="94000" />
+      <workItem from="1578399360274" duration="1645000" />
+      <workItem from="1578411556363" duration="1255000" />
+      <workItem from="1578472857935" duration="315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31698000" />
+    <option name="totallyTimeSpent" value="45993000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
@@ -486,14 +498,14 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32383123" sideWeight="0.50429183" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4458381" sideWeight="0.5064378" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32383123" sideWeight="0.49570817" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36716077" sideWeight="0.49356222" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20064378" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31706008" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -523,56 +535,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hrm-web-admin/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm-web-admin/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm-web-admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/views/TenantRegister.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1577716767744" expanded="true" signature="12754:12757" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-            <marker date="1577503618001" expanded="true" signature="943:951" ph="{&quot;routes&quot;: routes...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -588,7 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -612,9 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1577716767744" expanded="true" signature="12754:12757" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -622,7 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="11" column="55" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -630,10 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="25" column="2" lean-forward="false" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-            <marker date="1577503618001" expanded="true" signature="943:951" ph="{&quot;routes&quot;: routes...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -649,7 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -673,9 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1577716767744" expanded="true" signature="12754:12757" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -683,7 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="11" column="55" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -691,10 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="25" column="2" lean-forward="false" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-            <marker date="1577503618001" expanded="true" signature="943:951" ph="{&quot;routes&quot;: routes...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,7 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,7 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,7 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,14 +759,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/新建文本文档 (2).txt" />
+    <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/views/TenantRegister.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6630">
+          <caret line="255" column="10" lean-forward="false" selection-start-line="255" selection-start-column="10" selection-end-line="255" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/views/page/Site.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/views/course/Course.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8658">
+          <caret line="333" column="14" lean-forward="false" selection-start-line="333" selection-start-column="14" selection-end-line="333" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/views/course/CourseType.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1794">
+          <caret line="69" column="25" lean-forward="false" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hrm-web-admin/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="364">
+          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -836,58 +818,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+        <state relative-caret-position="104">
+          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
-            <marker date="1577503618001" expanded="true" signature="943:951" ph="{&quot;routes&quot;: routes...}" />
+            <element signature="e#218#252#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/新建文本文档 (2).txt" />
-    <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/views/TenantRegister.vue">
+    <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6630">
-          <caret line="255" column="10" lean-forward="false" selection-start-line="255" selection-start-column="10" selection-end-line="255" selection-end-column="10" />
-          <folding>
-            <marker date="1577716767744" expanded="true" signature="12754:12757" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/views/course/Course.vue">
+    <entry file="file://$PROJECT_DIR$/hrm-web-admin/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9126">
-          <caret line="351" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="353" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/views/page/Site.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9178">
-          <caret line="353" column="8" lean-forward="false" selection-start-line="353" selection-start-column="8" selection-end-line="353" selection-end-column="8" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hrm-web-admin/src/views/page/Page.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="190" column="8" lean-forward="false" selection-start-line="190" selection-start-column="8" selection-end-line="190" selection-end-column="8" />
+        <state relative-caret-position="5538">
+          <caret line="213" column="8" lean-forward="false" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#el-table#0;n#section#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#el-pagination#0;n#el-col#1;n#section#0;n#template#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm-web-course/js/vue/vue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrm-web-course/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="2726" column="7" lean-forward="false" selection-start-line="2726" selection-start-column="7" selection-end-line="2726" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
